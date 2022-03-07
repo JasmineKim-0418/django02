@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block con %}
+    <div class="p-5 mb-4 bg-light rounded-3">
+        <div class="container-fluid py-5">
+            <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA2MDVfMTEx%2FMDAxNjIyODgxMzY1OTk5.RiXbCmit2NHQgJK3gjgj7J9GkZCdorU0-eWNP4Oryvgg.bRV58LLH7h1ErjMVZIoPrMM1ybBxoXwwx_-m19lZQqsg.JPEG.carol1997%2F20210605%25A3%25DF171944.jpg&type=sc960_832" alt="My Image" width="400px">
+            <h1 class="display-5 fw-bold">김치찌개 좋아하시는 분 ~~ </h1>
+            <p class="col-md-8 fs-4">된장찌개 좋아하시는 분 나가세요!</p>
+            <a href="{% url 'board:index' %}"><button class="btn btn-dark btn-lg" type="button" style="font-weight: bold;">BOARD</button></a>
+        </div>
+    </div>
+{% endblock %}
+{% block noauth %}
+    <div class="p-5 mb-4 bg-light rounded-3">
+        <div class="container-fluid py-5">
+            <h1 class="display-5 fw-bold">김치찌개 좋아하시는 분 ~~ </h1>
+            <p class="col-md-8 fs-4">된장찌개 좋아하시는 분 나가세요!</p>
+            <a href="{% url 'acc:login' %}"><button class="btn btn-dark btn-lg" type="button" style="font-weight: bold;">LOGIN</button></a>
+        </div>
+    </div>
+{% endblock %}
